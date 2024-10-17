@@ -114,8 +114,10 @@ public class Flight {
 
 
     public void displayFlightInfo(){
+        System.out.println("==============");
         System.out.println("Flight Number: " + getFlightNumber());
         System.out.println("Destination: " + getDestination());
         System.out.println("Duration: " + getDuration());
+        System.out.println("==============");
     }
 }
