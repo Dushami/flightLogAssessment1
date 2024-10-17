@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  *  Class to Set/get information on flight information
  *
@@ -93,4 +95,27 @@ public class Flight {
         return duration;
     }
 
+    /*Setup method to set fields from within*/
+
+    /**
+     * Method to Set all fields by asking user questions
+     * and storing answers to appropriate fields
+     *
+     */
+    public void flightQuestions(){
+        System.out.println("Enter the Flight Number (e.g. ABC123");
+        Scanner setupFlight = new Scanner(System.in);
+        flightNumber = setupFlight.nextLine();
+        System.out.println("Enter the Destination of the flight (e.g. New York");
+        destination = setupFlight.nextLine();
+        System.out.println("Enter the flight duration in minutes (e.g. 240");
+        duration= setupFlight.nextInt();
+    }
+
+
+    public void displayFlightInfo(){
+        System.out.println("Flight Number: " + getFlightNumber());
+        System.out.println("Destination: " + getDestination());
+        System.out.println("Duration: " + getDuration());
+    }
 }
