@@ -13,6 +13,8 @@ public class Flight {
     private String flightNumber;
     private String destination;
     private int duration;
+    private int hours;
+    private int minutes;
 
     /*Default constructor*/
 
@@ -20,6 +22,8 @@ public class Flight {
         String flightNumber = "";
         String destination = "";
         int duration = 0;
+        int hours = 0;
+        int minutes = 0;
     }
 
     /*Secondary constructor*/
@@ -94,6 +98,15 @@ public class Flight {
     public int getDuration(){
         return duration;
     }
+
+    /*Method to convert minutes to hours and minutes*/
+
+    /**
+     * Method to convert duration into hours and minutes
+     * e.g. 100 minutes -> 1h 40m
+     *
+     * @return hours and minutes
+     */
 
     /*Setup method to set fields from within*/
 
