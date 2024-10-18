@@ -7,18 +7,15 @@
 
 public class FlightCatalog {
 
+    /*Fields storing objects*/
     private Flight flight1;
     private Flight flight2;
     private Flight flight3;
 
-    public FlightCatalog() {
-        flight1 = new Flight();
-        flight1.flightQuestions();
-
-        flight2 = new Flight();
-
-
-        flight3 = new Flight();
+    public FlightCatalog(Flight flight1, Flight flight2, Flight flight3) {
+        this.flight1 = flight1;
+        this.flight2 = flight2;
+        this.flight3 = flight3;
     }
 
     public static void main(String[] args) {
